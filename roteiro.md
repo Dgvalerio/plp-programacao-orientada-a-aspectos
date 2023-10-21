@@ -15,12 +15,12 @@ DICA: Ao importar o projeto de exemplo, utilizado em sala de aula, o Eclipse sug
    2. escolha o Source Folder (o mesmo do projeto)
    3. digite o nome do pacote (aspectos)
    4. e o nome do aspecto (Mensagens)
-- [ ] Defina no aspecto um pointcut para identificar todas as chamadas ao método creditar de objetos do tipo Conta. AspectJ Programming Guide.
-- [ ] Agora defina um advice para imprimir a mensagem "Vou creditar!" antes das chamadas ao método creditar de objetos do tipo Conta.
-  1. Teste com os pointcuts a seguir e descreva a diferença entre eles na forma de comentário
-     1. pointcut pcCreditar1(): call(public * creditar(..));
-     2. pointcut pcCreditar2(): call(public * Conta.creditar(..));
-     3. pointcut pcCreditar3(Conta c): target(c) && call(public * creditar(..));
+- [x] Defina no aspecto um pointcut para identificar todas as chamadas ao método creditar de objetos do tipo Conta. AspectJ Programming Guide.
+- [x] Agora defina um advice para imprimir a mensagem "Vou creditar!" antes das chamadas ao método creditar de objetos do tipo Conta.\
+  Teste com os pointcuts a seguir e descreva a diferença entre eles na forma de comentário:
+     - [ ] pointcut pcCreditar1(): call(public * creditar(..));
+     - [ ] pointcut pcCreditar2(): call(public * Conta.creditar(..));
+     - [ ] pointcut pcCreditar3(Conta c): target(c) && call(public * creditar(..));
 - [ ] Para executar o sistema composto, basta escolher a opção AspectJ/Java Application, no menu de contexto Run As...
 - [ ] No menu Window, Perspective, Show perspective -> Other... Em seguida escolha a opção Aspect Visualization Esta perspectiva mostra como os aspectos afetam as classes do projeto.
    - [ ] defina um advice (before) para imprimir o saldo da conta antes da execução do método creditar.
