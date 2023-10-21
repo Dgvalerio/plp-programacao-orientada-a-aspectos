@@ -35,6 +35,6 @@ DICA: Ao importar o projeto de exemplo, utilizado em sala de aula, o Eclipse sug
   - [x] Debitar:
     1. Só aceita valores positivos
     2. Verificar se o saldo é suficiente
-  - [ ] Transferir:
+  - [x] Transferir:
     1. Só aceita valores positivos
     2. Verificar se o saldo da conta destino é suficiente
