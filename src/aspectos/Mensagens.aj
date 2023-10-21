@@ -17,20 +17,25 @@ public aspect Mensagens {
 
   pointcut pcCreditar3(Conta c): target(c) && call(public * creditar(..));
   // => Ao ser executado no before
-  // Aparece somente quando a função creditar recebe uma Conta por parâmetro
   // Também pode retornar os dados da Conta que foi informada em creditar
 
-  before(Conta c): pcCreditar3(c) {
-    System.out.println("Vou creditar!");
+  pointcut pcCreditarValor(double valor): args(valor) && call(public * creditar(..));
+
+  //  before(Conta c): pcCreditar3(c) {
+  //    System.out.println("Vou creditar!");
+  //  }
+
+  before(double valor): pcCreditarValor(valor) {
+    System.out.println("Creditar valor: R$ " + valor);
   }
 
-//  before(Conta c): pcCreditar3(c) {
-//    System.out.println("O saldo antes de creditar é de: R$ " + c.getSaldo());
-//  }
-//
-//  after(Conta c): pcCreditar3(c) {
-//    System.out.println("O saldo após creditar é de: R$ " + c.getSaldo());
-//  }
+  //  before(Conta c): pcCreditar3(c) {
+  //    System.out.println("O saldo antes de creditar é de: R$ " + c.getSaldo());
+  //  }
+  //
+  //  after(Conta c): pcCreditar3(c) {
+  //    System.out.println("O saldo após creditar é de: R$ " + c.getSaldo());
+  //  }
 
   void around(Conta c): pcCreditar3(c) {
     System.out.println("O saldo antes de creditar é de: R$ " + c.getSaldo());
