@@ -25,6 +25,10 @@ public aspect Mensagens {
   }
 
   before(Conta c): pcCreditar3(c) {
-    System.out.println("O salado antes de creditar é de: R$ " + c.getSaldo());
+    System.out.println("O saldo antes de creditar é de: R$ " + c.getSaldo());
+  }
+
+  after(Conta c): pcCreditar3(c) {
+    System.out.println("O saldo após creditar é de: R$ " + c.getSaldo());
   }
 }

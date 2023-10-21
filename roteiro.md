@@ -24,8 +24,8 @@ DICA: Ao importar o projeto de exemplo, utilizado em sala de aula, o Eclipse sug
 - [x] Para executar o sistema composto, basta escolher a opção AspectJ/Java Application, no menu de contexto Run As...
 - [ ] No menu Window, Perspective, Show perspective -> Other... Em seguida escolha a opção Aspect Visualization Esta perspectiva mostra como os aspectos afetam as classes do projeto.
    - [x] defina um advice (before) para imprimir o saldo da conta antes da execução do método creditar.
-   - [ ] defina um advice (after) para imprimir o saldo da conta após a execução do método creditar.
-   - [ ] o que deve acontecer caso os dois advices atuem no método creditar? Teste executando o sistema.
+   - [x] defina um advice (after) para imprimir o saldo da conta após a execução do método creditar.
+   - [x] o que deve acontecer caso os dois advices atuem no método creditar? Teste executando o sistema.
 - [ ] Troque os dois advices por um único advice "around".
 - [ ] Altere o arquivo Mensagens.aj para que ele capture o valor do parâmetro e imprima a seguinte mensagem antes da execução do método creditar:
     1. "Creditar valor: R$ ***"
