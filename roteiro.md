@@ -27,9 +27,9 @@ DICA: Ao importar o projeto de exemplo, utilizado em sala de aula, o Eclipse sug
    - [ ] defina um advice (after) para imprimir o saldo da conta após a execução do método creditar.
    - [ ] o que deve acontecer caso os dois advices atuem no método creditar? Teste executando o sistema.
 - [ ] Troque os dois advices por um único advice "around".
-- [ ] Altere o arquivo Mensagens.aj para que ele capture o valor do parâmetro e imprimima a seguinte mensagem antes da execução do método creditar:
+- [ ] Altere o arquivo Mensagens.aj para que ele capture o valor do parâmetro e imprima a seguinte mensagem antes da execução do método creditar:
     1. "Creditar valor: R$ ***"
-- [ ] Crie um aspecto, denominado Precondicoes, para verificar as seguintes precondicoes nas transações bancárias:
+- [ ] Crie um aspecto, denominado Precondicoes, para verificar as seguintes precondições nas transações bancárias:
     1. Creditar:
        1. Só aceita valores positivos
     2. Debitar:
