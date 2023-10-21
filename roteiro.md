@@ -32,7 +32,7 @@ DICA: Ao importar o projeto de exemplo, utilizado em sala de aula, o Eclipse sug
 - [x] Crie um aspecto, denominado Precondicoes, para verificar as seguintes precondições nas transações bancárias:
   - [x] Creditar:
     1. Só aceita valores positivos
-  - [ ] Debitar:
+  - [x] Debitar:
     1. Só aceita valores positivos
     2. Verificar se o saldo é suficiente
   - [ ] Transferir:
