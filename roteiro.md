@@ -29,12 +29,12 @@ DICA: Ao importar o projeto de exemplo, utilizado em sala de aula, o Eclipse sug
 - [x] Troque os dois advices por um único advice "around".
 - [x] Altere o arquivo Mensagens.aj para que ele capture o valor do parâmetro e imprima a seguinte mensagem antes da execução do método creditar:
     1. "Creditar valor: R$ ***"
-- [ ] Crie um aspecto, denominado Precondicoes, para verificar as seguintes precondições nas transações bancárias:
-    1. Creditar:
-       1. Só aceita valores positivos
-    2. Debitar:
-       1. Só aceita valores positivos
-       2. Verificar se o saldo é suficiente
-    3. Transferir:
-       1. Só aceita valores positivos
-       2. Verificar se o saldo da conta destino é suficiente
+- [x] Crie um aspecto, denominado Precondicoes, para verificar as seguintes precondições nas transações bancárias:
+  - [x] Creditar:
+    1. Só aceita valores positivos
+  - [ ] Debitar:
+    1. Só aceita valores positivos
+    2. Verificar se o saldo é suficiente
+  - [ ] Transferir:
+    1. Só aceita valores positivos
+    2. Verificar se o saldo da conta destino é suficiente
