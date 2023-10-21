@@ -1,6 +1,5 @@
 package aspectos;
 
-
 import contas.ContaNaoEncontradaException;
 import fachada.Banco;
 
