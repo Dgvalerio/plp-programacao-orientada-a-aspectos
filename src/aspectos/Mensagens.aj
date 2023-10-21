@@ -21,6 +21,10 @@ public aspect Mensagens {
   // Também pode retornar os dados da Conta que foi informada em creditar
 
   before(Conta c): pcCreditar3(c) {
-    System.out.println("Vou creditar 3!" + c.toString());
+    System.out.println("Vou creditar!");
+  }
+
+  before(Conta c): pcCreditar3(c) {
+    System.out.println("O salado antes de creditar é de: R$ " + c.getSaldo());
   }
 }
