@@ -24,11 +24,19 @@ public aspect Mensagens {
     System.out.println("Vou creditar!");
   }
 
-  before(Conta c): pcCreditar3(c) {
-    System.out.println("O saldo antes de creditar é de: R$ " + c.getSaldo());
-  }
+//  before(Conta c): pcCreditar3(c) {
+//    System.out.println("O saldo antes de creditar é de: R$ " + c.getSaldo());
+//  }
+//
+//  after(Conta c): pcCreditar3(c) {
+//    System.out.println("O saldo após creditar é de: R$ " + c.getSaldo());
+//  }
 
-  after(Conta c): pcCreditar3(c) {
+  void around(Conta c): pcCreditar3(c) {
+    System.out.println("O saldo antes de creditar é de: R$ " + c.getSaldo());
+
+    proceed(c);
+
     System.out.println("O saldo após creditar é de: R$ " + c.getSaldo());
   }
 }
