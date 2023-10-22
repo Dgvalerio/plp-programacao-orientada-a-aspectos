@@ -2,10 +2,7 @@
 Trabalho realizado para a disciplina de Paradigmas de Linguagens de Programação, no período de 2023.1
 
 ## Vídeo
-Clique no vídeo para ser redirecionado:\
-[![Vídeo explicativo](preview.png)](https://drive.google.com/file/d/1Bk44UWPt4LK6gme8xIEyCGa-e7yU9nc6/preview)
-\
-ou [clique aqui](https://drive.google.com/file/d/1Bk44UWPt4LK6gme8xIEyCGa-e7yU9nc6/view?usp=sharing).
+[Clique aqui para ver o vídeo](https://drive.google.com/file/d/1Bk44UWPt4LK6gme8xIEyCGa-e7yU9nc6/view?usp=sharing).
 
 ## Atividade consiste em:
 Importe o projeto eclipse presente no arquivo "labAOP.zip".\
